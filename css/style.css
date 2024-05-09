@@ -150,4 +150,7 @@ p {
   .hero-section {
     background-image: url('../img/hero-image-1-mobile.jpg');
   }
+  #tech-consulting .col-md-6 {
+    margin-bottom: 50px;
+}
 }
