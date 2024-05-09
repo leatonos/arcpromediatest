@@ -1,0 +1,98 @@
+/* Variable Colors */
+:root {
+    --primary-color: #4a90ce;
+    --black-color: black;
+  }
+
+/* Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title-font{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    
+}
+
+h1{
+    font-size: 28px;
+
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero-section {
+    background-image: url('../img/hero-image-1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 85px);
+    padding: 100px 0;
+  }
+
+  .hero-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+  }
+
+  .hero-section .container {
+    height: calc(100vh - 300px);
+}
+
+.hero-section .row {
+    height: 100%;
+}
+
+.hero-section .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .header-logo{
+    width: 100px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: var(--primary-color);
+  }
+
+  .custom-btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+  }
+  .custom-btn-primary:hover {
+    background-color: #357ebd;
+    border-color: #357ebd;
+  }
+
+  .primarytext-color{
+    color: var(--primary-color);
+  }
+
+  .tech-footer{
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .footer-img{
+    width: 100px;
+  }
+  .copyright-text{
+    padding: 0;
+    margin: 0;
+  }
