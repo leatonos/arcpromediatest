@@ -1,98 +1,153 @@
 /* Variable Colors */
 :root {
-    --primary-color: #4a90ce;
-    --black-color: black;
-  }
+  --primary-color: #4a90ce;
+  --black-color: black;
+}
 
 /* Fonts */
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .title-font{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    
+  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  
 }
 
-h1{
-    font-size: 28px;
-
+h2{
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--primary-color);
 }
 p {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
+
+/* Hero Image Section */
 .hero-section {
-    background-image: url('../img/hero-image-1.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: auto;
-    min-height: calc(100vh - 85px);
-    padding: 100px 0;
-  }
+  background-image: url('../img/hero-image-1.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  min-height: calc(100vh - 85px);
+  padding: 100px 0;
+}
 
-  .hero-content {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 25px;
-  }
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+}
 
-  .hero-section .container {
-    height: calc(100vh - 300px);
+.hero-section .container {
+  height: calc(100vh - 300px);
 }
 
 .hero-section .row {
-    height: 100%;
+  height: 100%;
 }
 
 .hero-section .col-md-6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-  .header-logo{
-    width: 100px;
-  }
+.header-logo{
+  width: 100px;
+}
 
-  .navbar-light .navbar-nav .nav-link {
-    color: var(--primary-color);
-  }
+.navbar-light .navbar-nav .nav-link {
+  color: var(--primary-color);
+}
 
-  .custom-btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-  }
-  .custom-btn-primary:hover {
-    background-color: #357ebd;
-    border-color: #357ebd;
-  }
+/* Makes the dropdown on navbar menu appear on hover */
+  .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
-  .primarytext-color{
-    color: var(--primary-color);
-  }
+/* Custom buttons */
+.custom-btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+}
+.custom-btn-primary:hover {
+  background-color: #357ebd;
+  border-color: #357ebd;
+}
 
-  .tech-footer{
-    background-color: var(--primary-color);
-    color: white;
-  }
+.primarytext-color{
+  color: var(--primary-color);
+}
 
-  .footer-img{
-    width: 100px;
+/* Footer */
+.tech-footer{
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.footer-img{
+  width: 100px;
+}
+.copyright-text{
+  padding: 0;
+  margin: 0;
+}
+
+/* Services Section */
+#tech-consulting{
+  margin-top: 140px;
+}
+
+/* About us Section */
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: var(--primary-color);
+  border-bottom-style: solid;
+  border-bottom-color: var(--primary-color);
+  border-bottom-width: 1px;
+  color: white;
+}
+
+.nav-tabs .nav-item.show .nav-link{
+ color:var(--primary-color)
+}
+
+.tab-content {
+  padding-top: 0;
+}
+
+/* Contact us Section */
+#contact{
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#contact button {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.bg-blue {
+  background-color: var(--primary-color);
+}
+
+/* Mobile custom ajustments */
+@media (max-width: 768px) {
+  .hero-section {
+    background-image: url('../img/hero-image-1-mobile.jpg');
   }
-  .copyright-text{
-    padding: 0;
-    margin: 0;
-  }
+}

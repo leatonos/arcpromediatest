@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Bootstrap CSS -->
+  <!-- Metadata -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechSolutions Inc.</title>
   <meta name="description" content="TechSolutions INC is a technology consulting company ready to make tech easy">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
-  <link href="./css/style.css" rel="stylesheet">
+  <!-- Custom CSS and Favicon -->
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="./img/favico.png" type="image/x-icon">
 </head>
 <body>
@@ -19,7 +21,7 @@
     <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./img/techsolutions-logo-transparent.png" class="header-logo" alt="Techsolutions INC. Logo">
+                <img src="img/techsolutions-logo-transparent.png" class="header-logo" alt="Techsolutions INC. Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,25 +29,26 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown" id="services-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Our Services</a>
+                        <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown">Our Services</a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Technology consulting</a></li>
-                          <li><a class="dropdown-item" href="#">Software Development</a></li>
-                          <li><a class="dropdown-item" href="#">Technology consulting</a></li>
+                          <li><a class="dropdown-item" href="#tech-consulting">Technology consulting</a></li>
+                          <li><a class="dropdown-item" href="#software-dev">Software development</a></li>
+                          <li><a class="dropdown-item" href="#it-solutions">It solutions</a></li>
                         </ul>
                       </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
             
         </div>
     </header>
-    <section class="hero-section">
+     <!--Hero Image Section-->
+    <section class="hero-section mb-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -60,10 +63,11 @@
     </section>    
     <main>
         <!--Services Section-->
-        <section id="services" class="pb-5">
+        <section id="services">
           <div class="container">
-            <h2 class="my-5">Our Services</h2>
-            <div class="row align-items-center">
+            <h2>Our Services</h2>
+            <!--Technology consulting Subsection-->
+            <div class="row" id="tech-consulting">
                 <div class="col-md-6">
                     <h3>Technology consulting</h3>
                     <p>
@@ -71,36 +75,43 @@
                         Aliquam id viverra purus, id varius lectus. Integer mollis, 
                         turpis vel interdum vehicula, nisl arcu faucibus nibh, sed varius ante tortor ut eros. 
                     </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tellus non placerat fermentum. 
+                        Aliquam id viverra purus, id varius lectus. Integer mollis, 
+                        turpis vel interdum vehicula, nisl arcu faucibus nibh, sed varius ante tortor ut eros. 
+                    </p>
+                    <a href="#" class="custom-btn-primary">Learn More</a>
                 </div>
                 <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x450" class="img-fluid" alt="Contact Image">
+                    <img src="img/it-consulting.jpg" class="img-fluid" alt="Two people discussing it consulting">
                 </div>
             </div>
-            <div class="row my-5">
-                <h2 class="my-5">Software Development</h2>
-                <div class="col-md-4">
-                    <img src="img/web-icon.svg" class="img-fluid" alt="Contact Image">
-                    <h3 class="text-center">Web applications</h3>
+            <!--Software Development Subsection-->
+            <div class="row mt-5 " id="software-dev">
+                <h3>Software Development</h3>
+                <div class="col-md-4 my-5">
+                    <img src="img/web-icon.svg" class="img-fluid px-5" alt="Web applications icon">
+                    <h4 class="text-center">Web applications</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tellus non placerat fermentum.</p>
                 </div>
-                <div class="col-md-4">
-                    <img src="img/mobile-icon.svg" class="img-fluid" alt="Contact Image">
-                    <h3 class="text-center">Mobile apps</h3>
+                <div class="col-md-4 my-5">
+                    <img src="img/mobile-icon.svg" class="img-fluid px-5" alt="Mobile applications icon">
+                    <h4 class="text-center">Mobile apps</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tellus non placerat fermentum.</p>
                 </div>
-                <div class="col-md-4">
-                    <img src="img/cloud-icon.svg" class="img-fluid" alt="Contact Image">
-                    <h3 class="text-center">Cloud and Servers</h3>
+                <div class="col-md-4 my-5">
+                    <img src="img/cloud-icon.svg" class="img-fluid px-5" alt="Cloud and servers icon">
+                    <h4 class="text-center">Cloud and Servers</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tellus non placerat fermentum.</p>
                 </div>
             </div>
-            <div class="row align-items-center">
-               
+            <!--IT solutions-->
+            <div class="row align-items-center my-5 py-5" id="it-solutions">
                 <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x450" class="img-fluid" alt="Contact Image">
+                    <img src="img/it-solution-img.jpg" class="img-fluid" alt="people discussing it solutions">
                 </div>
                 <div class="col-md-6">
-                    <h2>Technology consulting</h2>
+                    <h3>IT solutions</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tellus non placerat fermentum. 
                         Aliquam id viverra purus, id varius lectus. Integer mollis, 
@@ -111,18 +122,119 @@
           </div>
         </section>
          <!--About Section-->
-        <section id="about" class="py-5">
-            <div class="container">
-              <h2>About Us</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod dapibus sapien, ac dictum nibh laoreet eget. Aenean ac ligula nisl.</p>
-            </div>
-          </section>
+        <section id="about" class="py-5 text-white">
+            <div class="container my-5">
+                <div class="row">
+                    <!--About Us Introduction-->
+                    <div class="col-md-12 my-3">
+                        <h2>About us</h2>
+                    </div>
+                    <!--About Us Tabs-->
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="team-tab" data-bs-toggle="tab" data-bs-target="#team" type="button" role="tab" aria-controls="team" aria-selected="true">
+                                Team
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="history-tab" data-bs-toggle="tab" data-bs-target="#history" type="button" role="tab" aria-controls="history" aria-selected="false">
+                                History
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="mission" aria-selected="false">
+                                 Mission
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="values-tab" data-bs-toggle="tab" data-bs-target="#values" type="button" role="tab" aria-controls="values" aria-selected="false">
+                                  Values
+                              </button>
+                            </li>
+                          </ul>
+                          <!--About Us Tabs content-->
+                          <div class="tab-content bg-blue p-3" id="myTabContent">
+                            <div class="tab-pane fade show active" id="team" role="tabpanel" aria-labelledby="team-tab">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="img/the-team.jpg" class="img-fluid" alt="A team working together">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3>The dream team</h3>
+                                        <p>
+                                            Ut sed consequat dolor, nec auctor lectus. Quisque ac suscipit neque. Integer consectetur non libero at iaculis. 
+                                            Phasellus sed ex non ex efficitur porttitor vel sed purus. Nulla enim nulla, 
+                                            pharetra at convallis vel, rutrum nec tellus. Pellentesque placerat scelerisque nulla. 
+                                            Aliquam sed tincidunt odio. Nulla facilisi. Cras blandit, eros in eleifend accumsan, 
+                                            nisl massa pellentesque libero, quis luctus arcu arcu nec lacus. Donec malesuada semper lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4 ">
+                                        <img src="img/history.jpg" class="img-fluid" alt="An senior employee helping a newer employee">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3>Our history</h3>
+                                        <p>
+                                            Ut sed consequat dolor, nec auctor lectus. Quisque ac suscipit neque. Integer consectetur non libero at iaculis. 
+                                            Phasellus sed ex non ex efficitur porttitor vel sed purus. Nulla enim nulla, 
+                                            pharetra at convallis vel, rutrum nec tellus. Pellentesque placerat scelerisque nulla. 
+                                            Aliquam sed tincidunt odio. Nulla facilisi. Cras blandit, eros in eleifend accumsan, 
+                                            nisl massa pellentesque libero, quis luctus arcu arcu nec lacus. Donec malesuada semper lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="img/mission.jpg" class="img-fluid" alt="Small group working together">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3>Our mission</h3>
+                                        <p>
+                                            Ut sed consequat dolor, nec auctor lectus. Quisque ac suscipit neque. Integer consectetur non libero at iaculis. 
+                                            Phasellus sed ex non ex efficitur porttitor vel sed purus. Nulla enim nulla, 
+                                            pharetra at convallis vel, rutrum nec tellus. Pellentesque placerat scelerisque nulla. 
+                                            Aliquam sed tincidunt odio. Nulla facilisi. Cras blandit, eros in eleifend accumsan, 
+                                            nisl massa pellentesque libero, quis luctus arcu arcu nec lacus. Donec malesuada semper lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="values" role="tabpanel" aria-labelledby="values-tab">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="img/values.jpg" class="img-fluid" alt="A diverse group">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3>Our values</h3>
+                                        <p>
+                                            Ut sed consequat dolor, nec auctor lectus. Quisque ac suscipit neque. Integer consectetur non libero at iaculis. 
+                                            Phasellus sed ex non ex efficitur porttitor vel sed purus. Nulla enim nulla, 
+                                            pharetra at convallis vel, rutrum nec tellus. Pellentesque placerat scelerisque nulla. 
+                                            Aliquam sed tincidunt odio. Nulla facilisi. Cras blandit, eros in eleifend accumsan, 
+                                            nisl massa pellentesque libero, quis luctus arcu arcu nec lacus. Donec malesuada semper lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
         <!-- Contact Us Section-->
         <section id="contact" class="py-5">
           <div class="container">
+            <h2 class="text-light">Contact Us</h2>
             <div class="row align-items-center">
+                <!-- Contact Form-->
                 <div class="col-md-8">
-                  <h2>Contact Us</h2>
                   <form action="#" method="POST">
                     <div class="mb-3">
                       <label for="name" class="form-label">Your Name</label>
@@ -139,13 +251,37 @@
                     <button type="submit" class="custom-btn-primary">Submit</button>
                   </form>
                 </div>
-                <div class="col-md-4">
-                  <img src="https://via.placeholder.com/300" class="img-fluid" alt="Contact Image">
+                 <!-- Social Media links -->
+                <div class="col-md-4 p-5">
+                    <h3>Find us</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-1">
+                            <a href="https://www.linkedin.com/" class="text-decoration-none text-white">
+                                <i class="bi bi-linkedin"></i> LinkedIn/TechSolutions
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a href="https://www.instagram.com/" class="text-decoration-none text-white">
+                                <i class="bi bi-instagram"></i> @TechSolutions
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a href="mailto:email@techsolutions.com" class="text-decoration-none text-white">
+                                <i class="bi bi-envelope"></i> email@techsolutions.com
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a href="tel:+1234567890" class="text-decoration-none text-white">
+                                <i class="bi bi-telephone"></i></i> +1 (123) 456-7890
+                            </a>
+                        </li>
+                    </ul>
                 </div>
               </div>
           </div>
         </section>
     </main>
+     <!--Footer Section-->
     <footer class="tech-footer">
     <div class="container">
         <div class="row align-items-center p-3">
@@ -158,10 +294,7 @@
         </div>
     </div>
     </footer>
-<!--
-    Bootstrap Scripts
--->
+<!-- Bootstrap Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
