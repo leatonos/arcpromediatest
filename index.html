@@ -106,7 +106,7 @@
                 </div>
             </div>
             <!--IT solutions-->
-            <div class="row align-items-center my-5 py-5" id="it-solutions">
+            <div class="row my-5 py-5" id="it-solutions">
                 <div class="col-md-6">
                     <img src="img/it-solution-img.jpg" class="img-fluid" alt="people discussing it solutions">
                 </div>
@@ -117,6 +117,12 @@
                         Aliquam id viverra purus, id varius lectus. Integer mollis, 
                         turpis vel interdum vehicula, nisl arcu faucibus nibh, sed varius ante tortor ut eros. 
                     </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tellus non placerat fermentum. 
+                        Aliquam id viverra purus, id varius lectus. Integer mollis, 
+                        turpis vel interdum vehicula, nisl arcu faucibus nibh, sed varius ante tortor ut eros. 
+                    </p>
+                    <a href="#" class="custom-btn-primary">Learn More</a>
                 </div>
             </div>
           </div>
@@ -235,7 +241,7 @@
             <div class="row align-items-center">
                 <!-- Contact Form-->
                 <div class="col-md-8">
-                  <form action="#" method="POST">
+                  <form id="contact-form" action="#" method="POST">
                     <div class="mb-3">
                       <label for="name" class="form-label">Your Name</label>
                       <input type="text" class="form-control" id="name" name="name" required>
@@ -251,6 +257,25 @@
                     <button type="submit" class="custom-btn-primary">Submit</button>
                   </form>
                 </div>
+                <!-- Confirmation Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content bg-blue">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Thanks for contacting us!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                                <div class="modal-body">
+                                <p>
+                                    We are so glad you choose us for your tech needs. One of our agents will contact you soon.
+                                </p>
+                                </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                  <!-- Social Media links -->
                 <div class="col-md-4 p-5">
                     <h3>Find us</h3>
@@ -294,7 +319,9 @@
         </div>
     </div>
     </footer>
-<!-- Bootstrap Scripts -->
+<!-- Bootstrap Script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- My Script -->
+<script src="js/script.js"></script>
 </body>
 </html>
